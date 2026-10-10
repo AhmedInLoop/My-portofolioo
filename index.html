@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmed Maged — Front-End Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanline"></div>
+
+<!-- ===== Tab bar (nav) ===== -->
+<header class="tabbar" id="tabbar">
+  <div class="tabbar-brand">
+    <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+    <span class="brand-name">ahmed-maged</span>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-target="hero">home.html</button>
+    <button class="tab" data-target="about">about.js</button>
+    <button class="tab" data-target="experience">experience.js</button>
+    <button class="tab" data-target="projects">projects/</button>
+    <button class="tab" data-target="skills">skills.json</button>
+    <button class="tab" data-target="honors">honors.md</button>
+    <button class="tab" data-target="contact">contact.js</button>
+  </nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="section hero">
+    <div class="hero-top">
+      <div class="terminal">
+        <div class="terminal-titlebar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="terminal-path">zsh — ahmed@portfolio</span>
+        </div>
+        <div class="terminal-body">
+          <p class="line"><span class="prompt">ahmed@portfolio</span><span class="path"> ~ </span><span class="chev">$</span> whoami</p>
+          <h1 class="typed-name" id="typedName"></h1>
+          <p class="line result">Front-End Developer · Computer Science Student</p>
+          <p class="line"><span class="prompt">ahmed@portfolio</span><span class="path"> ~ </span><span class="chev">$</span> cat location.txt</p>
+          <p class="line result">Egypt — open to front-end &amp; junior developer roles</p>
+          <p class="line"><span class="prompt">ahmed@portfolio</span><span class="path"> ~ </span><span class="chev">$</span> <span class="cursor">_</span></p>
+        </div>
+      </div>
+      <figure class="photo-card">
+        <div class="terminal-titlebar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="terminal-path">ahmed.jpg</span>
+        </div>
+        <img src="assets/ahmed-photo.jpg" alt="Ahmed Maged Gomaa Abdelnasser">
+      </figure>
+    </div>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View projects</a>
+      <a href="#contact" class="btn btn-ghost">Contact me</a>
+      <a href="https://github.com/AhmedInLoop" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <p class="file-label">about.js</p>
+    <div class="code-card">
+<pre><code><span class="c-com">// A short introduction</span>
+<span class="c-kw">const</span> <span class="c-var">developer</span> <span class="c-op">=</span> {
+  <span class="c-key">name</span>: <span class="c-str">"Ahmed Maged Gomaa Abdelnasser"</span>,
+  <span class="c-key">role</span>: <span class="c-str">"Front-End Developer"</span>,
+  <span class="c-key">status</span>: <span class="c-str">"Computer Science Student, expected graduation 2027"</span>,
+  <span class="c-key">school</span>: <span class="c-str">"Higher Obour Institute for Management, Computers &amp; Information Systems"</span>,
+  <span class="c-key">summary</span>: <span class="c-str">"Detail-oriented front-end developer who turns approved UI/UX wireframes into clean, accessible, cross-browser interfaces — backed by a solid CS foundation in data structures and OOP."</span>,
+  <span class="c-key">focus</span>: [<span class="c-str">"HTML5"</span>, <span class="c-str">"CSS3"</span>, <span class="c-str">"JavaScript"</span>, <span class="c-str">"Responsive Design"</span>],
+  <span class="c-key">github</span>: <span class="c-str">"github.com/AhmedInLoop"</span>,
+  <span class="c-key">languages</span>: { <span class="c-key">arabic</span>: <span class="c-str">"Native"</span>, <span class="c-key">english</span>: <span class="c-str">"B2 · Upper-Intermediate"</span> }
+};</code></pre>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section">
+    <p class="file-label">experience.js</p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>Front-End Development Training</h3>
+          <p class="timeline-sub">Digital Egypt Pioneers Initiative (DEPI)</p>
+          <ul>
+            <li>Gained hands-on experience in web architecture, HTML/CSS layout execution, and practical web development concepts.</li>
+            <li>Participated in collaborative team activities, code reviews, and practical implementation of modern front-end standards.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3>Bachelor's Degree in Computer Science</h3>
+          <p class="timeline-sub">Higher Obour Institute for Management, Computers and Information Systems — Expected 2027</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <p class="file-label">projects/</p>
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="browser-frame">
+          <div class="terminal-titlebar">
+            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+            <span class="terminal-path">zera3a-pro.app</span>
+          </div>
+          <img src="assets/zera3a-dashboard.jpg" alt="Zera3a Pro dashboard screenshot" loading="lazy">
+        </div>
+        <div class="project-head">
+          <span class="file-icon">📁</span>
+          <div>
+            <h3>Zera3a Pro</h3>
+            <p class="project-role">Management System Interface · Team Project · Front-End Developer</p>
+          </div>
+        </div>
+        <ul>
+          <li>Collaborated with a development team to structure and build the front-end interface for a management system aimed at modern irrigation equipment stores.</li>
+          <li>Translated approved UI/UX wireframes into responsive HTML and CSS, keeping visual accuracy and accessibility front and center.</li>
+          <li>Organized modular components into a clear, scalable interface for store management operations.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive UI</span>
+        </div>
+        <a href="https://github.com/AhmedInLoop/Zera3a_-pro_-app" target="_blank" rel="noopener" class="repo-link">View repo on GitHub ↗</a>
+      </article>
+
+      <article class="project-card">
+        <div class="browser-frame">
+          <div class="terminal-titlebar">
+            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+            <span class="terminal-path">ward-el-nada.shop</span>
+          </div>
+          <img src="assets/flower-shop.jpg" alt="Flower shop website screenshot" loading="lazy">
+        </div>
+        <div class="project-head">
+          <span class="file-icon">📁</span>
+          <div>
+            <h3>Flower Shop Website</h3>
+            <p class="project-role">Personal Project · Front-End Developer</p>
+          </div>
+        </div>
+        <ul>
+          <li>Designed and built a fully responsive site presenting flower shop products and services.</li>
+          <li>Used clean HTML5 markup and custom CSS3 for a consistent display across mobile, tablet, and desktop.</li>
+          <li>Structured product showcases and navigation to make browsing easier and more engaging.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive Design</span>
+        </div>
+        <a href="https://github.com/AhmedInLoop/nada-flower-shop" target="_blank" rel="noopener" class="repo-link">View repo on GitHub ↗</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section">
+    <p class="file-label">skills.json</p>
+    <div class="skills-grid">
+
+      <div class="skill-block">
+        <h3>Web Development</h3>
+        <div class="chip-row">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Responsive Web Design</span>
+          <span class="chip">Front-End UI Development</span>
+          <span class="chip">Cross-Browser Compatibility</span>
+        </div>
+        <p class="skill-note">Comfortable building responsive, cross-browser layouts from wireframes to finished pages.</p>
+      </div>
+
+      <div class="skill-block">
+        <h3>Programming &amp; CS</h3>
+        <div class="chip-row">
+          <span class="chip">C++</span>
+          <span class="chip">OOP</span>
+          <span class="chip">Data Structures</span>
+          <span class="chip">Algorithms</span>
+          <span class="chip">Problem Solving</span>
+        </div>
+        <p class="skill-note">Strong problem-solving foundation, sharpened through competitive programming.</p>
+      </div>
+
+      <div class="skill-block">
+        <h3>Tools &amp; Methods</h3>
+        <div class="chip-row">
+          <span class="chip">Git &amp; GitHub Basics</span>
+          <span class="chip">UI/UX Implementation</span>
+          <span class="chip">Agile Collaboration</span>
+        </div>
+        <p class="skill-note">Works well in team workflows: version control, code review, and iterative delivery.</p>
+      </div>
+
+      <div class="skill-block">
+        <h3>Soft Skills &amp; Teamwork</h3>
+        <div class="chip-row">
+          <span class="chip">Effective Communication</span>
+          <span class="chip">Team Collaboration</span>
+          <span class="chip">Cross-functional Teamwork</span>
+          <span class="chip">Time Management</span>
+          <span class="chip">Adaptability</span>
+        </div>
+        <p class="skill-note">Keeps projects moving by communicating clearly and adapting to the team's needs.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== HONORS ===== -->
+  <section id="honors" class="section">
+    <p class="file-label">honors.md</p>
+    <div class="honors-list">
+      <a class="honor-item" href="assets/cert-egyptian.jpg" target="_blank" rel="noopener">
+        <img class="honor-thumb" src="assets/cert-egyptian.jpg" alt="Certificate — 2025 ICPC Egyptian Collegiate Programming Contest" loading="lazy">
+        <div class="honor-text">
+          <h3>Honorable Mention — 2025 ICPC Egyptian Collegiate Programming Contest</h3>
+          <p>International Collegiate Programming Contest (ICPC Foundation) · Official National Contest · August 2025</p>
+          <span class="honor-view">View certificate ↗</span>
+        </div>
+      </a>
+      <a class="honor-item" href="assets/cert-acpc.jpg" target="_blank" rel="noopener">
+        <img class="honor-thumb" src="assets/cert-acpc.jpg" alt="Certificate — 2025 ICPC ACPC Kickoff Online Individual Contest" loading="lazy">
+        <div class="honor-text">
+          <h3>Honorable Mention — 2025 ICPC ACPC Kickoff Online Individual Contest</h3>
+          <p>International Collegiate Programming Contest (ICPC Foundation) · Regional / Online Contest · April 2025</p>
+          <span class="honor-view">View certificate ↗</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <p class="file-label">contact.js</p>
+    <div class="code-card">
+<pre><code><span class="c-kw">function</span> <span class="c-fn">getInTouch</span>() {
+  <span class="c-kw">return</span> {
+    <span class="c-key">email</span>: <span class="c-str">"ahmedmagedgom@gmail.com"</span>,
+    <span class="c-key">phone</span>: <span class="c-str">"01225953381"</span>,
+    <span class="c-key">linkedin</span>: <span class="c-str">"linkedin.com/in/ahmed-maged11"</span>,
+    <span class="c-key">github</span>: <span class="c-str">"github.com/AhmedInLoop"</span>,
+    <span class="c-key">location</span>: <span class="c-str">"Egypt"</span>
+  };
+}</code></pre>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:ahmedmagedgom@gmail.com" class="btn btn-primary">Email me</a>
+      <a href="tel:+2001225953381" class="btn btn-ghost">Call</a>
+      <a href="https://www.linkedin.com/in/ahmed-maged11" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+      <a href="https://github.com/AhmedInLoop" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Ahmed Maged Gomaa Abdelnasser — built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
